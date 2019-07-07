@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous'>
+
+  <title>Peugeot 206 IOT</title>
+</head>
+<body>
+  <br>
+  <div class='container-fluid'>
+    <div class='jumbotron'>
+      <h1 class='display-4'>Painel de Comandos - Peugeot 206 IOT</h1>
+      <!--<p class='lead'>Instituto Federal de Educação Ciencia e Tecnologia do Tocantins - campus Dianopolis</p>
+      <hr class="my-4">
+      <p>Professor: Fabiano Medeiro Tavares</p>
+      <p>Aluno: Joaquim Flávio Almeida Quirino Gomes</p>
+    </div><!--card-body-->
+  </div><!--card text-center-->
+
+  <div class='container'>
+    <div class='card-columns'>
+
+      <div class='card text-center' style='width: 18rem; margin: 15px;'>
+        <div class='card-body'>
+          <h3 class='card-title'>Travas</h3>
+          <br>
+          <a href='/?lockId=lockStart' class='btn btn-light'>Liga Desliga</a>
+        </div><!--card-body-->
+      </div><!--card text-center-->
+
+      <div class='card text-center' style='width: 18rem; margin: 15px;'>
+        <div class='card-body'>
+          <h3 class='card-title'>Ignição</h3>
+          <br>
+          <a href='/?ignId=startIgnition' class='btn btn-light'>Liga</a>
+          <a href='/?ignId=stopIgnition' class='btn btn-light'>Desliga</a>
+        </div><!--card-body-->
+      </div><!--card text-center-->
+
+      <div class='card text-center' style='width: 18rem; margin: 15px;'>
+        <div class='card-body'>
+          <h3 class='card-title'>Partida</h3>
+          <br>
+          <a href='/?engId=startEngine' class='btn btn-light'>START</a>
+        </div><!--card-body-->
+      </div><!--card text-center-->
+
+      <div class='card text-center' style='width: 18rem; margin: 15px;'>
+        <div class='card-body'>
+          <h3 class='card-title'>Faróis</h3>
+          <br>
+          <a href='/?lightId=lightsOn' class='btn btn-light'>Liga</a>
+          <a href='/?lightId=lightsOff' class='btn btn-light'>Desliga</a>
+        </div><!--card-body-->
+      </div><!--card text-center-->
+
+      <div class='card text-center' style='width: 18rem; margin: 15px;'>
+        <div class='card-body'>
+          <h3 class='card-title'>Meia Luz</h3>
+          <br>
+          <a href='/?lightId=meiaLuzOn' class='btn btn-light'>Liga</a>
+          <a href='/?lightId=meiaLuzOff' class='btn btn-light'>Desliga</a>
+        </div><!--card-body-->
+      </div><!--card text-center-->
+
+      <div class='card text-center' style='width: 18rem; margin: 15px;'>
+        <div class='card-body'>
+          <h3 class='card-title'>Setas</h3>
+          <br>
+          <a href='/?lightId=alterSetas' class='btn btn-light'>Liga Desliga</a>
+        </div><!--card-body-->
+      </div><!--card text-center-->
+
+      <div class='card text-center' style='width: 18rem; margin: 15px;'>
+        <div class='card-body'>
+          <h3 class='card-title'>Buzina</h3>
+          <br>
+          <a href='/?hornId=hornStart' class='btn btn-light'>Tocar</a>
+        </div><!--card-body-->
+      </div><!--card text-center-->
+
+      <div class='card text-center border-warning' style='width: 18rem; margin: 15px;'>
+        <div class='card-body text-warning'>
+          <h3 class='card-title'>Standy-by</h3>
+          <br>
+          <a href='/?hornId=hornStart' class='btn btn-light'>sleep</a>
+        </div><!--card-body-->
+      </div>
+
+    </div><!-- card-deck -->
+  </div><!--container-fluid-->
+</body>
+</html>
+
+<!--
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-6 col-md-2'>
+        <div class='thumbnail'>
+          <div class='caption text-center'>
+            <h3>Travas</h3>
+            <p><a onclick='myScript(0)' class='btn btn-primary' role='button'>Liga Desliga</a></p>
+            <form method='GET' action='#'>
+              <input type='hidden' id='ignId' name='ignId' value='travas'/>
+              <input type='hidden' id='sendStartIgnition' class='btn btn-success' value=' ativar '>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class='col-sm-6 col-md-2'>
+        <div class='thumbnail'>
+          <div class='caption text-center'>
+            <h3>Ignição</h3>
+            <p><a onclick='myScript(0)' class='btn btn-primary' role='button'>LIGA</a> <a onclick='myScript(1)' class='btn btn-default' role='button'>DESLIGA</a></p>
+            <form method='GET' action='#'>
+              <input type='hidden' id='ignId' name='ignId' value='startIgnition'/>
+              <input type='hidden' id='sendStartIgnition' class='btn btn-success' value=' ON '>
+            </form>
+            <form method='GET' action='#'>
+              <input type='hidden' id='ignId' name='ignId' value='stopIgnition'/>
+              <input type='hidden' id='sendStopIgnition' class='btn btn-danger' value='OFF'>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class='col-sm-6 col-md-2'>
+        <div class='thumbnail'>
+          <div class='caption text-center'>
+            <h3>Partida</h3>
+            <p><a onclick='myScript(2)' class='btn btn-primary' role='button'>START</a></p>
+            <form method='GET' action='#'>
+              <input type='hidden' id='engId' name='engId' value='startEngine'/>
+              <input type='hidden' id='sendStartEngine' class='btn btn-success' value=' START '>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class='col-sm-6 col-md-2'>
+        <div class='thumbnail'>
+          <div class='caption text-center'>
+            <h3>Faróis</h3>
+            <p><a onclick='myScript(4)' class='btn btn-primary' role='button'>ON</a> <a onclick='myScript(5)' class='btn btn-default' role='button'>OFF</a></p>
+            <form method='GET' action='#'>
+              <input type='hidden' id='lightId' name='lightId' value='lightsOn'/>
+              <input type='hidden' id='sendLightsOn' class='btn btn-success' value=' ON '>
+            </form>
+            <form method='GET' action='#'>
+              <input type='hidden' id='lightId' name='lightId' value='lightsOff'/>
+              <input type='hidden' id='sendLightsOff' class='btn btn-danger' value='OFF'>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class='col-sm-6 col-md-2'>
+        <div class='thumbnail'>
+          <div class='caption text-center'>
+            <h3>Setas</h3>
+            <p><a onclick='myScript(2)' class='btn btn-primary' role='button'>Liga Desliga</a></p>
+            <form method='GET' action='#'>
+              <input type='hidden' id='engId' name='engId' value='startEngine'/>
+              <input type='hidden' id='sendStartEngine' class='btn btn-success' value=' START '>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class='col-md-2'>
+        <div class='thumbnail'>
+          <div class='caption text-center'>
+            <h3>Buzina</h3>
+            <p><a onclick='myScript(6)' class='btn btn-primary' role='button'>TOCAR</a></p>
+            <form method='GET' action='#'>
+              <input type='hidden' id='hornID' name='hornID' value='hornStart'/>
+              <input type='hidden' id='sendHornStart' class='btn btn-success' value=' TOCAR '>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+-->

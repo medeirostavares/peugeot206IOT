@@ -1,0 +1,74 @@
+String htmlPage = "<!DOCTYPE html>";
+  htmlPage += "<html lang='pt-BR'>";
+  htmlPage += "<head>";
+
+  htmlPage += "<meta charset='utf-8'>";
+  htmlPage += "<meta name='viewport' content='width=device-width, initial-scale=1'>";
+
+  htmlPage += "<!-- Dependência BootStrap-->";
+  htmlPage += "<link rel= 'stylesheet' href= 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' >";
+  htmlPage += "<link rel= 'stylesheet' href= 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css' >";
+
+  htmlPage += "<!-- Dependência jQuery-->";
+  htmlPage += "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
+  htmlPage += "<script src= 'https://maxcdn.Bootstrapcdn.com/Bootstrap/3.3.7/js/Bootstrap.min.js' ></script>";
+
+  htmlPage += "<title>Peugeot 206 IOT</title>";
+  htmlPage += "<h1><font style='bold'>Painel de Comandos</font></h1>";
+
+  htmlPage += "</head>";
+  htmlPage += "<body>";
+
+  //CONTROLE DA IGNIÇÃO:
+  htmlPage += "<div class='container'>";
+  htmlPage += " <h2><font style='bold'>Ignição</font></h2>";
+  htmlPage += " <form method='POST' action='/'>";
+  htmlPage += "   <input type='hidden' id='ignId' name='ignId' value='startIgnition'/>";
+  htmlPage += "   <input type='submit' class='btn btn-success' value=' ON '>";
+  htmlPage += " </form>";
+  htmlPage += " &nbsp;";
+  htmlPage += " <form method='POST' action='/'>";
+  htmlPage += "   <input type='hidden' id='ignId' name='ignId' value='stopIgnition'/>";
+  htmlPage += "   <input type='submit' class='btn btn-danger' value='OFF'>";
+  htmlPage += " </form>";
+  htmlPage += "</div>";
+
+  //CONTROLE DO MOTOR:
+  htmlPage += "<div class='container'>";
+  htmlPage += " <h2><font style='bold'>Motor</font></h2>";
+  htmlPage += " <form method='POST' action='/'>";
+  htmlPage += "   <input type='hidden' id='engId' name='engId' value='startEngine'/>";
+  htmlPage += "   <input type='submit' class='btn btn-success' value=' START '>";
+  htmlPage += " </form>";
+  htmlPage += " &nbsp;";
+  htmlPage += " <form method='POST' action='/'>";
+  htmlPage += "   <input type='hidden' id='engId' name='engId' value='stopEngine'/>";
+  htmlPage += "   <input type='submit' class='btn btn-danger' value='STOP'>";
+  htmlPage += " </form>";
+  htmlPage += "</div>";
+
+  //CONTROLE DOS FARÓIS:
+  htmlPage += "<div class='container'>";
+  htmlPage += " <h2><font style='bold'>Faróis</font></h2>";
+  htmlPage += " <form method='POST' action='/'>";
+  htmlPage += "   <input type='hidden' id='lightId' name='lightId' value='lightsOn'/>";
+  htmlPage += "   <input type='submit' class='btn btn-success' value=' ON '>";
+  htmlPage += " </form>";
+  htmlPage += "&nbsp;";
+  htmlPage += " <form method='POST' action='/'>";
+  htmlPage += "   <input type='hidden' id='lightId' name='lightId' value='lightsOff'/>";
+  htmlPage += "   <input type='submit' class='btn btn-danger' value='OFF'>";
+  htmlPage += " </form>";
+  htmlPage += "</div>";
+
+  //CONTROLE DA BUZINA:
+  htmlPage += "<div class='container'>";
+  htmlPage += " <h2><font style='bold'>Buzina</font></h2>";
+  htmlPage += " <form method='POST' action='/'>";
+  htmlPage += "   <input type='hidden' id='hornID' name='hornID' value='hornStart'/>";
+  htmlPage += "   <input type='submit' class='btn btn-success' value=' TOCAR '>";
+  htmlPage += " </form>";
+  htmlPage += "</div>";
+
+  htmlPage += "</body>";
+  htmlPage += "</html>\n";

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+  <html lang='pt-BR'>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Dependência BootStrap-->
+    <link rel= 'stylesheet' href= 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' >
+    <link rel= 'stylesheet' href= 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css' >
+
+    <!-- Dependência jQuery-->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src= 'https://maxcdn.Bootstrapcdn.com/Bootstrap/3.3.7/js/Bootstrap.min.js' ></script>
+
+    <title>Peugeot 206 IOT</title>
+  </head>
+  <body>
+    <br>
+    <div class='container-fluid'>
+      <div class='jumbotron'>
+        <h1>Painel de Comandos!</h1>
+        <p>Peugeot 206 IOT</p>
+        <p><a class='btn btn-primary btn-lg' href='#' role='button'>Learn more</a></p>
+      </div>
+    </div>
+
+    <div class='container-fluid'>
+      <div class='row'>
+
+        <div class='col-sm-6 col-md-2'>
+          <div class='thumbnail'>
+            <div class='caption text-center'>
+                <h3>Ignição</h3>
+                <p>...</p>
+                <p><a onclick='myScript(0)' class='btn btn-primary' role='button'>LIGA</a> <a onclick='myScript(1)' class='btn btn-default' role='button'>DESLIGA</a></p>
+                <form method='GET' action='#'>
+                  <input type='hidden' id='ignId' name='ignId' value='startIgnition'/>
+                  <input type='hidden' id="sendStartIgnition" class='btn btn-success' value=' ON '>
+                </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+    function myScript(x){
+      switch (x) {
+        case 0:
+          document.getElementById('sendStartIgnition').type = 'submit';
+          document.getElementById('sendStartIgnition').click();
+        break;
+      }
+    }
+    </script>
+  </body>
+  </html>

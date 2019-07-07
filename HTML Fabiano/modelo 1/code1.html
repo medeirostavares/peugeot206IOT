@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+   <html lang='pt-BR'>
+   <head>
+
+   <meta charset='utf-8'>
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+   <!-- Dependência BootStrap-->
+   <link rel= 'stylesheet' href= 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' >
+   <link rel= 'stylesheet' href= 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css' >
+
+   <!-- Dependência jQuery-->
+   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+   <script src= 'https://maxcdn.Bootstrapcdn.com/Bootstrap/3.3.7/js/Bootstrap.min.js' ></script>
+
+   <title>Peugeot 206 IOT</title>
+
+   </head>
+   <body>
+
+  //CONTROLE DA IGNIÇÃO:
+   <div class='container'>
+    <h2><font style='bold'>Ignição</font></h2>
+    <form method='POST' action='/'>
+      <input type='hidden' id='ignId' name='ignId' value='startIgnition'/>
+      <input type='submit' class='btn btn-success' value=' ON '>
+    </form>
+    &nbsp;
+    <form method='POST' action='/'>
+      <input type='hidden' id='ignId' name='ignId' value='stopIgnition'/>
+      <input type='submit' class='btn btn-danger' value='OFF'>
+    </form>
+   </div>
+
+   </body>
+   </html>

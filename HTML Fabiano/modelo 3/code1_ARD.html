@@ -1,0 +1,59 @@
+String htmlPage = "<!DOCTYPE html>";
+  htmlPage += "<html lang='pt-BR'>";
+  htmlPage += "<head>";
+  htmlPage += "  <meta charset='utf-8' name='viewport' content='width=device-width, initial-scale=1.0'>";
+  htmlPage += "  <style>";
+  htmlPage += "    * {";
+  htmlPage += "      box-sizing: border-box;";
+  htmlPage += "    }";
+  htmlPage += "    .right {";
+  htmlPage += "      background-color:#e5e5e5;";
+  htmlPage += "      float: lefta;";
+  htmlPage += "      width:300px;";
+  htmlPage += "      height:180px;";
+  htmlPage += "      padding:15px;";
+  htmlPage += "      margin: 25px;";
+  htmlPage += "      text-align:center;";
+  htmlPage += "    }";
+
+  htmlPage += "    .botoes {";
+  htmlPage += "      float:center;";
+  htmlPage += "      height:20%;";
+  htmlPage += "      padding:15px;";
+  htmlPage += "      margin:10px;";
+  htmlPage += "      text-align:center;";
+  htmlPage += "    }";
+
+  htmlPage += "    .row {";
+  htmlPage += "      float: center;";
+  htmlPage += "      padding:15px;";
+  htmlPage += "      height:300px;";
+  htmlPage += "      margin: 25px;";
+  htmlPage += "      text-align:center";
+  htmlPage += "    }";
+
+  htmlPage += "    @media only screen and (max-width:620px) {";
+  htmlPage += "      /* For mobile phones: */";
+  htmlPage += "      .menu, .main, .right {";
+  htmlPage += "        width:100%;";
+  htmlPage += "      }";
+  htmlPage += "    }";
+  htmlPage += "  </style>";
+  htmlPage += "</head>";
+  htmlPage += "<body style='font-family:Verdana;color:#aaaaaa;'>";
+
+  htmlPage += "  <div style='background-color:#e5e5e5;padding:15px;text-align:center;'>";
+  htmlPage += "    <h1>Hello World</h1>";
+  htmlPage += "  </div>";
+
+  htmlPage += "  <div style='overflow:auto'>";
+  htmlPage += "    <div class='row'>";
+  htmlPage += "      <div class='right'>";
+  htmlPage += "        <h2>Ignição</h2>";
+  htmlPage += "        <a class='botoes' href='/?ignId=startIgnition'>Liga</a>";
+  htmlPage += "      </div>";
+
+  htmlPage += "    </div>";
+  htmlPage += "  </div>";
+  htmlPage += "</body>";
+  htmlPage += "</html>";

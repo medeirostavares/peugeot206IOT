@@ -1,0 +1,59 @@
+String htmlPage = "<!DOCTYPE html>";
+htmlPage += "  <html lang='pt-BR'>";
+
+htmlPage += "  <head>";
+htmlPage += "    <meta charset='utf-8'>";
+htmlPage += "    <meta name='viewport' content='width=device-width, initial-scale=1'>";
+
+htmlPage += "    <!-- Dependência BootStrap-->";
+htmlPage += "    <link rel= 'stylesheet' href= 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' >";
+htmlPage += "    <link rel= 'stylesheet' href= 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css' >";
+
+htmlPage += "    <!-- Dependência jQuery-->";
+htmlPage += "    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
+htmlPage += "    <script src= 'https://maxcdn.Bootstrapcdn.com/Bootstrap/3.3.7/js/Bootstrap.min.js' ></script>";
+
+htmlPage += "    <title>Peugeot 206 IOT</title>";
+htmlPage += "  </head>";
+htmlPage += "  <body>";
+htmlPage += "    <br>";
+htmlPage += "    <div class='container-fluid'>";
+htmlPage += "      <div class='jumbotron'>";
+htmlPage += "        <h1>Painel de Comandos!</h1>";
+htmlPage += "        <p>Peugeot 206 IOT</p>";
+htmlPage += "        <p><a class='btn btn-primary btn-lg' href='#' role='button'>Learn more</a></p>";
+htmlPage += "      </div>";
+htmlPage += "    </div>";
+
+htmlPage += "    <div class='container-fluid'>";
+htmlPage += "      <div class='row'>";
+
+htmlPage += "        <div class='col-sm-6 col-md-2'>";
+htmlPage += "          <div class='thumbnail'>";
+htmlPage += "            <div class='caption text-center'>";
+htmlPage += "                <h3>Ignição</h3>";
+htmlPage += "                <p>...</p>";
+htmlPage += "                <p><a onclick='myScript(0)' class='btn btn-primary' role='button'>LIGA</a></p>";
+htmlPage += "                <form method='GET' action='#'>";
+htmlPage += "                  <input type='hidden' id='ignId' name='ignId' value='startIgnition'/>";
+htmlPage += "                  <input type='hidden' id='sendStartIgnition' class='btn btn-success' value=' ON '>";
+htmlPage += "                </form>";
+htmlPage += "            </div>";
+htmlPage += "          </div>";
+htmlPage += "        </div>";
+
+htmlPage += "      </div>";
+htmlPage += "    </div>";
+
+htmlPage += "    <script>\n";
+htmlPage += "    function myScript(x){\n";
+htmlPage += "      switch (x) {\n";
+htmlPage += "        case 0:\n";
+htmlPage += "          document.getElementById('sendStartIgnition').type = 'submit';\n";
+htmlPage += "          document.getElementById('sendStartIgnition').click();\n";
+htmlPage += "        break;\n";
+htmlPage += "      }\n";
+htmlPage += "    }\n";
+htmlPage += "    </script>\n";
+htmlPage += "  </body>\n";
+htmlPage += "  </html>\n";
